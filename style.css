@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #fff;
+}
+
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark .container {
+  background: #1e1e1e;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.income-expense {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form, .filter-month {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark input, body.dark select {
+  background: #2c2c2c;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+ul#transactions {
+  list-style: none;
+  padding: 0;
+}
+
+ul#transactions li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+li.income {
+  border-color: #28a745;
+  background: #e6f8ec;
+}
+
+li.expense {
+  border-color: #dc3545;
+  background: #fbeaea;
+}
+
+body.dark li.income {
+  background: #2a3a2a;
+}
+
+body.dark li.expense {
+  background: #3a1f1f;
+}
+
+li button {
+  background: #dc3545;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+li button:hover {
+  background: #c82333;
+}

@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+
+    <div class="dark-mode-toggle">
+      <label>
+        <input type="checkbox" id="darkModeToggle"> Dark Mode
+      </label>
+    </div>
+    
+    <div class="balance">
+      <h2>Your Balance: $<span id="balance">0</span></h2>
+      <div class="income-expense">
+        <div>Income: $<span id="income">0</span></div>
+        <div>Expense: $<span id="expense">0</span></div>
+      </div>
+    </div>
+
+  <div class="form">
+  <input type="text" id="description" placeholder="Description">
+  <input type="number" id="amount" placeholder="Amount">
+  <select id="type">
+    <option value="income">Income</option>
+    <option value="expense">Expense</option>
+    <option value="goal">Goal</option> 
+  </select>
+ 
+  <button id="add-btn" type="button">Add</button>
+</div>
+
+    <div class="filter-month">
+      <label for="monthFilter">Filter by Month:</label>
+      <input type="month" id="monthFilter">
+      <button id="clearFilter">Clear Filter</button>
+    </div>
+
+    <ul id="transactions">
+   
+    </ul>
+
+    <h3>Income vs Expense Chart</h3>
+    <canvas id="expenseChart" width="400" height="200"></canvas>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
