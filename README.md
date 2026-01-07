@@ -13,7 +13,7 @@ A simple and intuitive **Expense Tracker** web application that allows users to 
 - Visualize how much you’ve earned and spent  
 
 🎯 **Set Financial Goals:**  
-- Add **goal entries** (e.g., “Haircut $25”) to plan for future monthly spending  
+- Add **goal entries** (e.g., “Save for Trip $25”) to plan for future monthly spending  
 
 📅 **Filter by Month:**  
 - Select a specific month to view only that month’s transactions and goals  
@@ -73,7 +73,16 @@ A simple and intuitive **Expense Tracker** web application that allows users to 
 | JavaScript | Interactivity, Logic, Local Storage |
 | Chart.js   | Visualizing data with charts |
 
----
+--
+👤 Author
+
+Mehreen Khalid
+
+💻 How to Use
+
+Clone the repository:
+
+git clone https://github.com/DeclutterQueen/Expense-Tracker.git
 
 ## 📁 Project Structure
 
